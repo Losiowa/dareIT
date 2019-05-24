@@ -18,8 +18,15 @@ Take one down and pass it around, #{number-1} bottles of beer on the wall."
   end
 end
 
+def verses(first, last)
+"#{verse(first)}
+#{verse(last)}"
 end
 
-# 5. After running 'Bottles.new.verse(0)' I'm expecting to get:
-# 'No more bottles of beer on the wall, no more bottles of beer.
-#  Go to the store and buy some more, 99 bottles of beer on the wall.'
+end
+
+# 6. After running 'Bottles.new.verses(99, 98)' I'm expecting to get:
+# '99 bottles of beer on the wall, 99 bottles of beer.
+#  Take one down and pass it around, 98 bottles of beer on the wall.
+#  98 bottles of beer on the wall, 98 bottles of beer.
+#  Take one down and pass it around, 97 bottles of beer on the wall.'
