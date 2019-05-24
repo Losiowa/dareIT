@@ -21,9 +21,15 @@ Take one down and pass it around, 88 bottles of beer on the wall.'
   expect(Bottles.new.verse(2)).to eq '2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.'
   end
+
+  it 'verse1' do
+  expect(Bottles.new.verse(1)).to eq '1 bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.'
+  end
+
 end
 
 
-# 3. After running 'Bottles.new.verse(2)' I'm expecting to get:
-# '2 bottles of beer on the wall, 2 bottles of beer.
-#  Take one down and pass it around, 1 bottle of beer on the wall.'
+# 4. After running 'Bottles.new.verse(1)' I'm expecting to get:
+# '1 bottle of beer on the wall, 1 bottle of beer.
+#  Take it down and pass it around, no more bottles of beer on the wall.'
