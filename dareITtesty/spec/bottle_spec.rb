@@ -34,11 +34,22 @@ Take one down and pass it around, 98 bottles of beer on the wall.
 Take one down and pass it around, 97 bottles of beer on the wall.'
   end
 
+it 'verses2,0' do
+expect(Bottles.new.verses(2,0)).to eq '2 bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottle of beer on the wall.
+1 bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.'
+end
+
 end
 
 
-# 6. After running 'Bottles.new.verses(99, 98)' I'm expecting to get:
-# '99 bottles of beer on the wall, 99 bottles of beer.
-#  Take one down and pass it around, 98 bottles of beer on the wall.
-#  98 bottles of beer on the wall, 98 bottles of beer.
-#  Take one down and pass it around, 97 bottles of beer on the wall.'
+# 7. After running 'Bottles.new.verses(2, 0)' I'm expecting to get:
+# '2 bottles of beer on the wall, 2 bottles of beer.
+#  Take one down and pass it around, 1 bottle of beer on the wall.
+#  1 bottle of beer on the wall, 1 bottle of beer.
+#  Take it down and pass it around, no more bottles of beer on the wall.
+#  No more bottles of beer on the wall, no more bottles of beer.
+#  Go to the store and buy some more, 99 bottles of beer on the wall.'
